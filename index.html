@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rafael Antunes Vieira — Head de Tecnologia</title>
+  <meta name="description" content="Portfólio de Rafael Antunes Vieira — Head de Tecnologia, Arquitetura de Software e Liderança Técnica. Especialista em sistemas governamentais (SICAR Federal), geoprocessamento e cloud.">
+  <meta name="author" content="Rafael Antunes Vieira">
+  <meta name="theme-color" content="#0b1220">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Rafael Antunes Vieira — Head de Tecnologia">
+  <meta property="og:description" content="Arquitetura de Software · Liderança Técnica · SICAR Federal · PostGIS · Cloud">
+  <meta property="og:image" content="assets/foto.jpg">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>
+    // Evita "flash" de tema errado: aplica preferência salva antes do CSS pintar.
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#top" class="nav__brand" aria-label="Início">
+        <span class="nav__logo">RA</span>
+        <span class="nav__name">Rafael Antunes</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Seções">
+        <a href="#sobre" data-i18n="nav.about">Sobre</a>
+        <a href="#experiencia" data-i18n="nav.exp">Experiência</a>
+        <a href="#projetos" data-i18n="nav.projects">Projetos</a>
+        <a href="#skills" data-i18n="nav.skills">Competências</a>
+        <a href="#formacao" data-i18n="nav.edu">Formação</a>
+        <a href="#contato" data-i18n="nav.contact">Contato</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="btn-icon" id="lang-toggle" type="button" aria-label="Mudar idioma / Change language" title="PT / EN">
+          <span class="lang-code" id="lang-code">EN</span>
+        </button>
+        <button class="btn-icon" id="theme-toggle" type="button" aria-label="Alternar tema" title="Tema claro/escuro">
+          <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="btn-icon nav__burger" id="nav-burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Olá, eu sou</p>
+          <h1 class="hero__title">Rafael Antunes Vieira</h1>
+          <p class="hero__role">
+            <span data-i18n="hero.role1">Head de Tecnologia</span>
+            <span class="sep">·</span>
+            <span data-i18n="hero.role2">Arquitetura de Software</span>
+            <span class="sep">·</span>
+            <span data-i18n="hero.role3">Liderança Técnica</span>
+          </p>
+          <p class="hero__lead" data-i18n="hero.lead">
+            Lidero times ágeis e desenho arquiteturas escaláveis para sistemas de missão crítica.
+            Cinco anos construindo e integrando o <strong>SICAR Federal</strong>, o Sistema Nacional de Cadastro
+            Ambiental Rural, com forte domínio em geoprocessamento, PostgreSQL/PostGIS e infraestrutura cloud.
+          </p>
+
+          <div class="hero__cta">
+            <a href="#contato" class="btn btn--primary" data-i18n="hero.cta1">Entre em contato</a>
+            <a href="assets/Curriculo-Rafael-Antunes.pdf" class="btn btn--ghost" download data-i18n="hero.cta2">Baixar currículo (PDF)</a>
+          </div>
+
+          <ul class="hero__social" aria-label="Redes">
+            <li><a href="https://www.linkedin.com/in/rafael-antunes-vieira-313a15159" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+              <span>LinkedIn</span></a></li>
+            <li><a href="https://github.com/Rav98" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z"/></svg>
+              <span>GitHub</span></a></li>
+            <li><a href="mailto:rafaelantunesvieira@outlook.com.br" aria-label="E-mail">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              <span>E-mail</span></a></li>
+          </ul>
+        </div>
+
+        <div class="hero__photo">
+          <div class="photo-frame">
+            <img src="assets/foto.jpg" srcset="assets/foto-400.jpg 400w, assets/foto.jpg 800w" sizes="(max-width: 720px) 220px, 340px" alt="Foto de Rafael Antunes Vieira" width="340" height="340">
+          </div>
+          <div class="hero__badge">
+            <span class="dot" aria-hidden="true"></span>
+            <span data-i18n="hero.badge">Lavras — MG · Brasil</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STATS ===== -->
+    <section class="stats" aria-label="Destaques">
+      <div class="container stats__grid">
+        <div class="stat">
+          <span class="stat__num">12<span class="plus">+</span></span>
+          <span class="stat__label" data-i18n="stats.years">anos em tecnologia</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">5</span>
+          <span class="stat__label" data-i18n="stats.sicar">anos no SICAR Federal</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">QA → Head</span>
+          <span class="stat__label" data-i18n="stats.path">trajetória completa no ciclo de software</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">GIS</span>
+          <span class="stat__label" data-i18n="stats.gis">especialista em dados espaciais</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SOBRE ===== -->
+    <section class="section" id="sobre">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index">01</span>
+          <h2 data-i18n="about.title">Sobre mim</h2>
+        </div>
+
+        <div class="about">
+          <div class="about__text">
+            <p data-i18n="about.p1">
+              Sou Head de Tecnologia e Engenheiro de Software com sólida trajetória na gestão de times ágeis
+              e na definição de arquiteturas escaláveis. Comecei na área em 2014 como técnico de infraestrutura,
+              passei por QA, desenvolvimento full stack e liderança técnica até chegar à gestão estratégica de
+              tecnologia — o que me dá uma visão completa, do servidor ao produto.
+            </p>
+            <p data-i18n="about.p2">
+              Atuo na implementação de Inteligência Artificial em sistemas corporativos e na modernização de
+              aplicações legadas. Tenho ampla experiência na integração de ecossistemas complexos, incluindo
+              projetos governamentais como o <strong>SICAR Federal</strong> e a implementação do
+              <strong>Código Florestal</strong>, além de forte domínio em geoprocessamento e infraestrutura cloud.
+            </p>
+            <p data-i18n="about.p3">
+              Meu foco é entregar soluções que unam inovação tecnológica, segurança e alta performance —
+              sem abrir mão de continuar hands-on no código.
+            </p>
+          </div>
+
+          <aside class="about__cards">
+            <div class="card card--accent">
+              <h3 data-i18n="about.c1.t">Liderança</h3>
+              <p data-i18n="about.c1.d">Gestão de equipes multidisciplinares, mentoria técnica e planejamento estratégico de TI.</p>
+            </div>
+            <div class="card">
+              <h3 data-i18n="about.c2.t">Arquitetura</h3>
+              <p data-i18n="about.c2.d">Microsserviços, integração de sistemas e modernização de legado com foco em escala.</p>
+            </div>
+            <div class="card">
+              <h3 data-i18n="about.c3.t">Dados espaciais</h3>
+              <p data-i18n="about.c3.d">PostgreSQL/PostGIS, geoprocessamento e alto volume de dados ambientais.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIÊNCIA ===== -->
+    <section class="section section--alt" id="experiencia">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index">02</span>
+          <h2 data-i18n="exp.title">Experiência profissional</h2>
+        </div>
+
+        <ol class="timeline">
+
+          <li class="tl-item">
+            <div class="tl-item__meta">
+              <span class="tl-item__period" data-i18n="exp.ec.period">Set 2025 — Presente</span>
+              <span class="tl-item__company">Entrega Contínua</span>
+              <span class="tl-item__place" data-i18n="exp.ec.place">Belo Horizonte, MG</span>
+            </div>
+            <div class="tl-item__body">
+              <h3 data-i18n="exp.ec.role">Head de Tecnologia</h3>
+              <ul>
+                <li data-i18n="exp.ec.b1">Liderança técnica e estratégica da área de tecnologia, definindo a arquitetura de sistemas e selecionando as tecnologias mais adequadas para cada projeto.</li>
+                <li data-i18n="exp.ec.b2">Gestão completa da infraestrutura de servidores e ambientes cloud, assegurando alta disponibilidade (SLA), segurança robusta e escalabilidade dos serviços.</li>
+                <li data-i18n="exp.ec.b3">Condução de equipe de desenvolvedores, promovendo mentoria técnica, colaboração e crescimento profissional dos liderados.</li>
+                <li data-i18n="exp.ec.b4">Participação ativa (hands-on) no desenvolvimento de software, da implementação de funcionalidades críticas à execução de testes.</li>
+                <li data-i18n="exp.ec.b5">Definição e acompanhamento de processos ágeis, métricas de desempenho e boas práticas de engenharia.</li>
+                <li data-i18n="exp.ec.b6">Promoção da inovação tecnológica, identificando oportunidades de melhoria contínua nos sistemas legados e novos produtos.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="tl-item">
+            <div class="tl-item__meta">
+              <span class="tl-item__period" data-i18n="exp.iica.period">Dez 2024 — Jan 2026</span>
+              <span class="tl-item__company">IICA</span>
+              <span class="tl-item__place" data-i18n="exp.iica.place">Instituto Interamericano de Cooperación para la Agricultura · Remoto</span>
+            </div>
+            <div class="tl-item__body">
+              <h3 data-i18n="exp.iica.role">Consultor de TI Especialista</h3>
+              <ul>
+                <li data-i18n="exp.iica.b1">Consultoria técnica especializada na integração de produtos com o Sistema Nacional de Cadastro Ambiental Rural (SICAR Federal).</li>
+                <li data-i18n="exp.iica.b2">Diagnósticos profundos de integração, identificando falhas de interoperabilidade e gargalos de performance.</li>
+                <li data-i18n="exp.iica.b3">Proposição e implementação de melhorias arquiteturais e correções em APIs e bancos de dados para assegurar a conformidade dos dados.</li>
+                <li data-i18n="exp.iica.b4">Atualização e redação de manuais técnicos de integração entre os sistemas estaduais de gestão ambiental e o SICAR Federal.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="tl-item">
+            <div class="tl-item__meta">
+              <span class="tl-item__period" data-i18n="exp.youx.period">Ago 2022 — Set 2025</span>
+              <span class="tl-item__company">Youx Group</span>
+              <span class="tl-item__place" data-i18n="exp.youx.place">Lavras, MG</span>
+            </div>
+            <div class="tl-item__body">
+              <h3><span data-i18n="exp.youx.role1">Líder Técnico de Software</span> <small data-i18n="exp.youx.p1">Jan 2024 — Set 2025</small></h3>
+              <ul>
+                <li data-i18n="exp.youx.b1">Liderança de equipe multidisciplinar dedicada ao SICAR Federal, com orientação técnica e apoio em problemas complexos de engenharia.</li>
+                <li data-i18n="exp.youx.b2">Gerenciamento ponta a ponta do ciclo de vida de desenvolvimento (SDLC) das entregas críticas do SICAR, da concepção à produção.</li>
+                <li data-i18n="exp.youx.b3">Colaboração direta com stakeholders internos e governamentais para alinhamento de requisitos técnicos e regras de negócio.</li>
+                <li data-i18n="exp.youx.b4">Administração de bancos PostgreSQL/PostGIS voltados aos dados espaciais do projeto, com tuning de performance e estratégias de backup.</li>
+              </ul>
+              <h3 class="mt"><span data-i18n="exp.youx.role2">Analista de Sistemas Pleno</span> <small data-i18n="exp.youx.p2">Ago 2022 — Dez 2023</small></h3>
+              <ul>
+                <li data-i18n="exp.youx.b5">Desenvolvimento full stack na construção e sustentação do SICAR Federal com JavaScript (AngularJS, Vue.js) e Java (Play Framework, Spring).</li>
+                <li data-i18n="exp.youx.b6">Troubleshooting em produção e evolução contínua da estrutura de dados do sistema.</li>
+                <li data-i18n="exp.youx.b7">Planejamento e execução de treinamentos técnicos para usuários e suporte avançado a outras equipes do projeto.</li>
+                <li data-i18n="exp.youx.b8">Criação e manutenção de esteiras de deploy automatizadas com GitLab Runner para entregas seguras e contínuas.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="tl-item">
+            <div class="tl-item__meta">
+              <span class="tl-item__period" data-i18n="exp.zetta.period">Fev 2021 — Ago 2022</span>
+              <span class="tl-item__company">Agência Zetta</span>
+              <span class="tl-item__place" data-i18n="exp.zetta.place">Lavras, MG</span>
+            </div>
+            <div class="tl-item__body">
+              <h3><span data-i18n="exp.zetta.role1">Analista de Sistemas Júnior</span> <small data-i18n="exp.zetta.p1">Fev 2022 — Ago 2022</small></h3>
+              <ul>
+                <li data-i18n="exp.zetta.b1">Desenvolvimento de rotinas e funcionalidades para o SICAR Federal com JavaScript (AngularJS, Vue.js) e Java (Play Framework, Spring).</li>
+                <li data-i18n="exp.zetta.b2">Identificação e correção de falhas para garantir a integridade dos dados ambientais e a operação contínua do sistema.</li>
+                <li data-i18n="exp.zetta.b3">Elaboração de documentação técnica e de regras de negócio críticas para facilitar a transferência de tecnologia.</li>
+              </ul>
+              <h3 class="mt"><span data-i18n="exp.zetta.role2">Analista de Qualidade de Software (QA)</span> <small data-i18n="exp.zetta.p2">Fev 2021 — Fev 2022</small></h3>
+              <ul>
+                <li data-i18n="exp.zetta.b4">Execução de testes de regressão, funcionais, integração, usabilidade e performance para assegurar a estabilidade do SICAR Federal.</li>
+                <li data-i18n="exp.zetta.b5">Elaboração de manuais de usuário, casos de uso e cenários de teste detalhados.</li>
+                <li data-i18n="exp.zetta.b6">Rastreamento e acompanhamento do ciclo de vida de bugs e melhorias em GitLab e Mantis.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="tl-item">
+            <div class="tl-item__meta">
+              <span class="tl-item__period" data-i18n="exp.auto.period">Fev 2014 — Dez 2020</span>
+              <span class="tl-item__company" data-i18n="exp.auto.company">Profissional Autônomo</span>
+              <span class="tl-item__place" data-i18n="exp.auto.place">Piranguçu, MG</span>
+            </div>
+            <div class="tl-item__body">
+              <h3 data-i18n="exp.auto.role">Técnico em Infraestrutura e Manutenção</h3>
+              <ul>
+                <li data-i18n="exp.auto.b1">Atendimento técnico a clientes corporativos, instituições de ensino e comércio, além de atendimentos domiciliares.</li>
+                <li data-i18n="exp.auto.b2">Instalação, configuração e manutenção de redes de computadores e internet.</li>
+                <li data-i18n="exp.auto.b3">Manutenção e configuração avançada em servidores Linux e Microsoft Windows Server.</li>
+              </ul>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== PROJETOS ===== -->
+    <section class="section" id="projetos">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index">03</span>
+          <h2 data-i18n="proj.title">Projetos em destaque</h2>
+        </div>
+
+        <div class="projects">
+          <article class="project project--featured">
+            <div class="project__tag" data-i18n="proj.p1.tag">Governo Federal · 2021 — 2025</div>
+            <h3 data-i18n="proj.p1.title">SICAR Federal — Sistema Nacional de Cadastro Ambiental Rural</h3>
+            <p data-i18n="proj.p1.desc">
+              Plataforma nacional que registra e analisa os imóveis rurais do Brasil para aplicação do Código Florestal.
+              Atuei em todo o ciclo — de QA a Líder Técnico — desenvolvendo funcionalidades críticas, administrando
+              os bancos PostgreSQL/PostGIS com dados espaciais de todo o território nacional, criando esteiras de
+              CI/CD e liderando a equipe multidisciplinar responsável pelas entregas.
+            </p>
+            <ul class="project__stack">
+              <li>Java</li><li>Spring</li><li>Play Framework</li><li>AngularJS</li><li>Vue.js</li><li>PostGIS</li><li>GitLab CI</li><li>Linux</li>
+            </ul>
+          </article>
+
+          <article class="project">
+            <div class="project__tag" data-i18n="proj.p2.tag">Consultoria · IICA · 2024 — 2026</div>
+            <h3 data-i18n="proj.p2.title">Integração dos sistemas estaduais com o SICAR</h3>
+            <p data-i18n="proj.p2.desc">
+              Diagnóstico e correção de falhas de interoperabilidade entre os sistemas de gestão ambiental dos estados
+              e o SICAR Federal. Melhorias arquiteturais em APIs e bancos de dados e redação dos manuais técnicos de integração.
+            </p>
+            <ul class="project__stack">
+              <li>APIs REST</li><li data-i18n="proj.p2.s1">Interoperabilidade</li><li>PostgreSQL</li><li data-i18n="proj.p2.s2">Documentação técnica</li>
+            </ul>
+          </article>
+
+          <article class="project">
+            <div class="project__tag" data-i18n="proj.p3.tag">Liderança · Entrega Contínua · 2025 — Presente</div>
+            <h3 data-i18n="proj.p3.title">Modernização de legado e IA em sistemas corporativos</h3>
+            <p data-i18n="proj.p3.desc">
+              Definição da arquitetura e da stack de novos produtos, gestão da infraestrutura cloud com foco em SLA e
+              segurança, e implementação de Inteligência Artificial em sistemas corporativos existentes.
+            </p>
+            <ul class="project__stack">
+              <li data-i18n="proj.p3.s1">Arquitetura</li><li>Cloud</li><li>Docker</li><li data-i18n="proj.p3.s2">IA aplicada</li><li data-i18n="proj.p3.s3">Microsserviços</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index">04</span>
+          <h2 data-i18n="skills.title">Competências</h2>
+        </div>
+
+        <div class="skills">
+          <div class="skill-group">
+            <h3 data-i18n="skills.g1">Liderança &amp; Estratégia</h3>
+            <ul class="chips">
+              <li data-i18n="skills.g1.1">Gestão de equipes multidisciplinares</li>
+              <li data-i18n="skills.g1.2">Mentoria técnica</li>
+              <li data-i18n="skills.g1.3">Planejamento estratégico de TI</li>
+              <li>Scrum</li><li>Kanban</li>
+              <li data-i18n="skills.g1.4">Gestão de stakeholders</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3 data-i18n="skills.g2">Engenharia de Software &amp; IA</h3>
+            <ul class="chips">
+              <li>Java</li><li>Spring Boot</li><li>Play Framework</li>
+              <li>JavaScript</li><li>Angular</li><li>Vue.js</li><li>C++</li>
+              <li data-i18n="skills.g2.1">Microsserviços</li>
+              <li data-i18n="skills.g2.2">IA em sistemas corporativos</li>
+              <li>Android</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3 data-i18n="skills.g3">Infraestrutura &amp; Dados</h3>
+            <ul class="chips">
+              <li>PostgreSQL</li><li>PostGIS</li><li>QGIS</li>
+              <li data-i18n="skills.g3.1">Dados espaciais</li>
+              <li>Cloud Computing</li><li>Docker</li><li>CI/CD</li><li>GitLab Runner</li><li>Linux Server</li><li>Windows Server</li>
+              <li data-i18n="skills.g3.2">Redes</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3 data-i18n="skills.g4">Domínio de Negócio</h3>
+            <ul class="chips">
+              <li data-i18n="skills.g4.1">Sistemas governamentais</li>
+              <li>SICAR</li>
+              <li data-i18n="skills.g4.2">Código Florestal</li>
+              <li data-i18n="skills.g4.3">Interoperabilidade de sistemas</li>
+              <li data-i18n="skills.g4.4">Regras de negócio complexas</li>
+              <li data-i18n="skills.g4.5">Qualidade de software</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FORMAÇÃO ===== -->
+    <section class="section" id="formacao">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index">05</span>
+          <h2 data-i18n="edu.title">Formação &amp; certificações</h2>
+        </div>
+
+        <div class="edu">
+          <div class="edu__col">
+            <h3 class="edu__subtitle" data-i18n="edu.sub1">Formação acadêmica</h3>
+            <div class="card">
+              <span class="card__period">2018 — 2022</span>
+              <h4 data-i18n="edu.e1.t">Bacharelado em Ciência da Computação</h4>
+              <p data-i18n="edu.e1.d">Universidade Federal de Itajubá (UNIFEI) · Itajubá, MG</p>
+            </div>
+            <div class="card">
+              <span class="card__period">2014 — 2015</span>
+              <h4 data-i18n="edu.e2.t">Inglês como Segundo Idioma (ESL)</h4>
+              <p>Wizard by Pearson</p>
+            </div>
+          </div>
+
+          <div class="edu__col">
+            <h3 class="edu__subtitle" data-i18n="edu.sub2">Certificações e cursos</h3>
+            <div class="card">
+              <span class="card__period">2023</span>
+              <h4 data-i18n="edu.c1.t">Formação Completa em Scrum: Planejamento e Gestão Ágil</h4>
+              <p data-i18n="edu.c1.d">Udemy · Metodologias ágeis, ritos do Scrum, gestão de backlog e liderança de times de alta performance.</p>
+            </div>
+            <div class="card">
+              <span class="card__period">2023</span>
+              <h4 data-i18n="edu.c2.t">Gestão de Banco de Dados PostgreSQL/PostGIS com QGIS</h4>
+              <p data-i18n="edu.c2.d">Udemy · Administração avançada, modelagem de dados espaciais e integração com geoprocessamento.</p>
+            </div>
+            <div class="card">
+              <span class="card__period">2022</span>
+              <h4 data-i18n="edu.c3.t">Curso Completo de Desenvolvimento Android</h4>
+              <p data-i18n="edu.c3.d">Udemy · Apps nativos, ciclo de vida de activities, integração com APIs REST e persistência de dados.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTATO ===== -->
+    <section class="section section--contact" id="contato">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index">06</span>
+          <h2 data-i18n="contact.title">Vamos conversar?</h2>
+        </div>
+        <p class="contact__lead" data-i18n="contact.lead">
+          Aberto a oportunidades de liderança técnica, arquitetura de software e consultoria em sistemas
+          governamentais e geoprocessamento. Responderei o mais rápido possível.
+        </p>
+
+        <div class="contact__grid">
+          <a class="contact__card" href="mailto:rafaelantunesvieira@outlook.com.br">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            <span class="contact__label">E-mail</span>
+            <span class="contact__value">rafaelantunesvieira@outlook.com.br</span>
+          </a>
+          <a class="contact__card" href="https://wa.me/5535997685209" target="_blank" rel="noopener">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+            <span class="contact__label">WhatsApp</span>
+            <span class="contact__value">+55 35 99768-5209</span>
+          </a>
+          <a class="contact__card" href="https://www.linkedin.com/in/rafael-antunes-vieira-313a15159" target="_blank" rel="noopener">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+            <span class="contact__label">LinkedIn</span>
+            <span class="contact__value">rafael-antunes-vieira</span>
+          </a>
+          <a class="contact__card" href="https://github.com/Rav98" target="_blank" rel="noopener">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z"/></svg>
+            <span class="contact__label">GitHub</span>
+            <span class="contact__value">github.com/Rav98</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year">2026</span> Rafael Antunes Vieira</span>
+      <span class="footer__pdf">
+        <span data-i18n="footer.pdf">Portfólio em PDF:</span>
+        <a href="assets/Portfolio-Rafael-Antunes-PT.pdf" download>PT</a> ·
+        <a href="assets/Portfolio-Rafael-Antunes-EN.pdf" download>EN</a>
+      </span>
+      <span class="footer__loc" data-i18n="footer.loc">Lavras, Minas Gerais — Brasil</span>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
