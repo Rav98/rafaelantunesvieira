@@ -1,5 +1,5 @@
 /* =========================================================
-   main.js — tema, idioma, menu mobile, scroll-spy e reveal
+   main.js: tema, idioma, menu mobile, scroll-spy e reveal
    ========================================================= */
 (function () {
   'use strict';

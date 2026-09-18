@@ -1,4 +1,4 @@
-# Portfólio — Rafael Antunes Vieira
+# Portfólio de Rafael Antunes Vieira
 
 Site estático (HTML/CSS/JS puro, sem build) com versão em PDF gerada a partir do próprio site.
 

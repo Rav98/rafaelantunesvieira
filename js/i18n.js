@@ -1,13 +1,13 @@
 /* =========================================================
-   i18n — traduções para EN.
+   i18n: traduções para EN.
    O conteúdo em PT-BR é o que está no HTML; ao carregar, main.js
    captura o innerHTML original de cada [data-i18n] como fallback PT.
    Valores aqui podem conter HTML simples (<strong>).
    ========================================================= */
 window.I18N = {
   en: {
-    'meta.title': 'Rafael Antunes Vieira — Head of Technology',
-    'meta.desc': 'Portfolio of Rafael Antunes Vieira — Head of Technology, Software Architecture and Technical Leadership. Specialist in government systems (SICAR Federal), geoprocessing and cloud.',
+    'meta.title': 'Rafael Antunes Vieira | Head of Technology',
+    'meta.desc': 'Portfolio of Rafael Antunes Vieira | Head of Technology, Software Architecture and Technical Leadership. Specialist in government systems (SICAR Federal), geoprocessing and cloud.',
 
     'nav.about': 'About',
     'nav.exp': 'Experience',
@@ -23,7 +23,7 @@ window.I18N = {
     'hero.lead': 'I lead agile teams and design scalable architectures for mission-critical systems. Five years building and integrating <strong>SICAR Federal</strong>, Brazil\'s National Rural Environmental Registry, with strong expertise in geoprocessing, PostgreSQL/PostGIS and cloud infrastructure.',
     'hero.cta1': 'Get in touch',
     'hero.cta2': 'Download résumé (PDF)',
-    'hero.badge': 'Lavras — MG · Brazil',
+    'hero.badge': 'Lavras, MG · Brazil',
 
     'stats.years': 'years in technology',
     'stats.sicar': 'years on SICAR Federal',
@@ -31,9 +31,9 @@ window.I18N = {
     'stats.gis': 'spatial data specialist',
 
     'about.title': 'About me',
-    'about.p1': 'I am a Head of Technology and Software Engineer with a solid track record managing agile teams and defining scalable architectures. I started in 2014 as an infrastructure technician, then moved through QA, full-stack development and technical leadership up to strategic technology management — which gives me an end-to-end view, from server to product.',
+    'about.p1': 'I am a Head of Technology and Software Engineer with a solid track record managing agile teams and defining scalable architectures. I started in 2014 as an infrastructure technician, then moved through QA, full-stack development and technical leadership up to strategic technology management. This gives me an end-to-end view, from server to product.',
     'about.p2': 'I work on implementing Artificial Intelligence in enterprise systems and modernizing legacy applications. I have broad experience integrating complex ecosystems, including government projects such as <strong>SICAR Federal</strong> and the implementation of Brazil\'s <strong>Forest Code</strong>, plus strong skills in geoprocessing and cloud infrastructure.',
-    'about.p3': 'My focus is delivering solutions that combine technological innovation, security and high performance — while staying hands-on in the code.',
+    'about.p3': 'My focus is delivering solutions that combine technological innovation, security and high performance, while staying hands-on in the code.',
     'about.c1.t': 'Leadership',
     'about.c1.d': 'Managing multidisciplinary teams, technical mentoring and strategic IT planning.',
     'about.c2.t': 'Architecture',
@@ -43,7 +43,7 @@ window.I18N = {
 
     'exp.title': 'Professional experience',
 
-    'exp.ec.period': 'Sep 2025 — Present',
+    'exp.ec.period': 'Sep 2025 - Present',
     'exp.ec.place': 'Belo Horizonte, Brazil',
     'exp.ec.role': 'Head of Technology',
     'exp.ec.b1': 'Technical and strategic leadership of the technology area, defining system architecture and selecting the most suitable technologies for each project.',
@@ -53,7 +53,7 @@ window.I18N = {
     'exp.ec.b5': 'Defining and tracking agile processes, performance metrics and engineering best practices.',
     'exp.ec.b6': 'Driving technological innovation by identifying continuous-improvement opportunities in legacy systems and new products.',
 
-    'exp.iica.period': 'Dec 2024 — Jan 2026',
+    'exp.iica.period': 'Dec 2024 - Jan 2026',
     'exp.iica.place': 'Inter-American Institute for Cooperation on Agriculture · Remote',
     'exp.iica.role': 'Senior IT Consultant',
     'exp.iica.b1': 'Specialized technical consulting on integrating products with the National Rural Environmental Registry System (SICAR Federal).',
@@ -61,35 +61,35 @@ window.I18N = {
     'exp.iica.b3': 'Proposing and implementing architectural improvements and fixes in APIs and databases to ensure data compliance.',
     'exp.iica.b4': 'Updating and writing technical integration manuals between state environmental management systems and SICAR Federal.',
 
-    'exp.youx.period': 'Aug 2022 — Sep 2025',
+    'exp.youx.period': 'Aug 2022 - Sep 2025',
     'exp.youx.place': 'Lavras, Brazil',
     'exp.youx.role1': 'Software Tech Lead',
-    'exp.youx.p1': 'Jan 2024 — Sep 2025',
+    'exp.youx.p1': 'Jan 2024 - Sep 2025',
     'exp.youx.b1': 'Leading a multidisciplinary team dedicated to SICAR Federal, providing technical guidance and support on complex engineering problems.',
     'exp.youx.b2': 'End-to-end management of the development lifecycle (SDLC) for SICAR\'s critical deliveries, from conception to production.',
     'exp.youx.b3': 'Direct collaboration with internal and government stakeholders to align technical requirements and business rules.',
     'exp.youx.b4': 'Administering PostgreSQL/PostGIS databases for the project\'s spatial data, with performance tuning and backup strategies.',
     'exp.youx.role2': 'Mid-level Systems Analyst',
-    'exp.youx.p2': 'Aug 2022 — Dec 2023',
+    'exp.youx.p2': 'Aug 2022 - Dec 2023',
     'exp.youx.b5': 'Full-stack development building and maintaining SICAR Federal with JavaScript (AngularJS, Vue.js) and Java (Play Framework, Spring).',
     'exp.youx.b6': 'Production troubleshooting and continuous evolution of the system\'s data structure.',
     'exp.youx.b7': 'Planning and delivering technical training for users and advanced support to other project teams.',
     'exp.youx.b8': 'Building and maintaining automated deployment pipelines with GitLab Runner for safe, continuous delivery.',
 
-    'exp.zetta.period': 'Feb 2021 — Aug 2022',
+    'exp.zetta.period': 'Feb 2021 - Aug 2022',
     'exp.zetta.place': 'Lavras, Brazil',
     'exp.zetta.role1': 'Junior Systems Analyst',
-    'exp.zetta.p1': 'Feb 2022 — Aug 2022',
+    'exp.zetta.p1': 'Feb 2022 - Aug 2022',
     'exp.zetta.b1': 'Developing routines and features for SICAR Federal with JavaScript (AngularJS, Vue.js) and Java (Play Framework, Spring).',
     'exp.zetta.b2': 'Identifying and fixing defects to guarantee environmental data integrity and continuous system operation.',
     'exp.zetta.b3': 'Writing technical and critical business-rule documentation to ease technology transfer.',
     'exp.zetta.role2': 'Software Quality Analyst (QA)',
-    'exp.zetta.p2': 'Feb 2021 — Feb 2022',
+    'exp.zetta.p2': 'Feb 2021 - Feb 2022',
     'exp.zetta.b4': 'Running regression, functional, integration, usability and performance tests to ensure SICAR Federal\'s stability.',
     'exp.zetta.b5': 'Producing user manuals, use cases and detailed test scenarios.',
     'exp.zetta.b6': 'Tracking the lifecycle of bugs and improvements in GitLab and Mantis.',
 
-    'exp.auto.period': 'Feb 2014 — Dec 2020',
+    'exp.auto.period': 'Feb 2014 - Dec 2020',
     'exp.auto.company': 'Freelance',
     'exp.auto.place': 'Piranguçu, Brazil',
     'exp.auto.role': 'Infrastructure & Maintenance Technician',
@@ -98,13 +98,13 @@ window.I18N = {
     'exp.auto.b3': 'Advanced maintenance and configuration of Linux and Microsoft Windows servers.',
 
     'proj.title': 'Featured projects',
-    'proj.p1.tag': 'Federal Government · 2021 — 2025',
-    'proj.p1.title': 'SICAR Federal — National Rural Environmental Registry System',
-    'proj.p1.desc': 'The national platform that registers and analyzes Brazil\'s rural properties to enforce the Forest Code. I worked across the entire cycle — from QA to Tech Lead — building critical features, administering the PostgreSQL/PostGIS databases holding spatial data for the whole country, creating CI/CD pipelines and leading the multidisciplinary team responsible for deliveries.',
-    'proj.p2.tag': 'Consulting · IICA · 2024 — 2026',
+    'proj.p1.tag': 'Federal Government · 2021 - 2025',
+    'proj.p1.title': 'SICAR Federal: National Rural Environmental Registry System',
+    'proj.p1.desc': 'The national platform that registers and analyzes Brazil\'s rural properties to enforce the Forest Code. I worked across the entire cycle, from QA to Tech Lead, building critical features, administering the PostgreSQL/PostGIS databases holding spatial data for the whole country, creating CI/CD pipelines and leading the multidisciplinary team responsible for deliveries.',
+    'proj.p2.tag': 'Consulting · IICA · 2024 - 2026',
     'proj.p2.title': 'Integrating state systems with SICAR',
     'proj.p2.desc': 'Diagnosing and fixing interoperability failures between the states\' environmental management systems and SICAR Federal. Architectural improvements in APIs and databases and authoring of the technical integration manuals.',
-    'proj.p3.tag': 'Leadership · Entrega Contínua · 2025 — Present',
+    'proj.p3.tag': 'Leadership · Entrega Contínua · 2025 - Present',
     'proj.p3.title': 'Legacy modernization and AI in enterprise systems',
     'proj.p3.desc': 'Defining the architecture and stack for new products, managing cloud infrastructure with a focus on SLA and security, and implementing Artificial Intelligence in existing enterprise systems.',
 
@@ -150,6 +150,6 @@ window.I18N = {
     'contact.lead': 'Open to technical leadership, software architecture and consulting opportunities in government systems and geoprocessing. I will reply as soon as possible.',
 
     'footer.pdf': 'Portfolio as PDF:',
-    'footer.loc': 'Lavras, Minas Gerais — Brazil'
+    'footer.loc': 'Lavras, Minas Gerais, Brazil'
   }
 };
