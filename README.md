@@ -13,6 +13,10 @@ assets/           foto, favicon, currículo e os PDFs do portfólio
 build-pdf.ps1     gera assets/Portfolio-Rafael-Antunes-{PT,EN}.pdf com o Edge headless
 ```
 
+## Certificados
+
+Os PDFs ficam em `assets/certificados/` e são públicos. Antes de adicionar um documento, verifique se ele traz CPF, RG ou data de nascimento: o repositório é público e o histórico do git guarda tudo o que for enviado. A cópia do diploma tem esses dados ocultados.
+
 ## Rodar localmente
 
 ```powershell

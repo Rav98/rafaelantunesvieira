@@ -201,6 +201,8 @@ strong { color: var(--text); font-weight: 600; }
 .card p { color: var(--text-muted); font-size: .93rem; margin: 0; }
 .card--accent { border-color: var(--accent); background: linear-gradient(180deg, var(--accent-soft), var(--surface)); }
 .card__period { font-size: .78rem; font-weight: 600; color: var(--accent); letter-spacing: .06em; text-transform: uppercase; }
+.card__link { display: inline-flex; align-items: center; gap: .35rem; margin-top: .7rem; font-size: .88rem; font-weight: 600; }
+.card__link .icon { width: 16px; height: 16px; }
 
 /* ---------- Sobre ---------- */
 .about { display: grid; grid-template-columns: 1.4fr 1fr; gap: 3rem; align-items: start; }
@@ -344,7 +346,7 @@ strong { color: var(--text); font-weight: 600; }
   body { font-size: 10.5pt; line-height: 1.45; background: #fff; }
   .container { width: 100%; }
 
-  .nav, .hero__bg, .hero__cta, .nav__actions, .footer__loc, .footer__pdf, .hero__social span { display: none !important; }
+  .nav, .hero__bg, .hero__cta, .nav__actions, .footer__loc, .footer__pdf, .card__link, .hero__social span { display: none !important; }
   .reveal { opacity: 1 !important; transform: none !important; }
   a { color: inherit; }
   a[href^="http"]::after, a[href^="mailto"]::after { content: none; }
