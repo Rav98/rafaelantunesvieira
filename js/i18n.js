@@ -132,6 +132,7 @@ window.I18N = {
     'skills.g4.3': 'Systems interoperability',
     'skills.g4.4': 'Complex business rules',
     'skills.g4.5': 'Software quality',
+    'skills.g5': 'AWS Cloud',
 
     'edu.title': 'Education & certifications',
     'edu.sub1': 'Academic background',

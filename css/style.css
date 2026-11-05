@@ -250,6 +250,7 @@ strong { color: var(--text); font-weight: 600; }
 /* ---------- Skills ---------- */
 .skills { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.4rem; }
 .skill-group { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 1.6rem; }
+.skill-group--wide { grid-column: 1 / -1; }
 .skill-group h3 { font-size: 1.05rem; margin-bottom: 1rem; color: var(--accent); }
 .chips { display: flex; flex-wrap: wrap; gap: .5rem; }
 .chips li {
@@ -378,7 +379,7 @@ strong { color: var(--text); font-weight: 600; }
   .section__head::after { display: block; }
 
   #experiencia { break-before: page; }
-  .tl-item__body li, .tl-item__body h3, .tl-item__body ul, .project, .card, .skill-group, .contact__card, .section__head, .edu, .contact__grid { break-inside: avoid; }
+  .tl-item__body li, .tl-item__body h3, .project, .card, .skill-group, .contact__card, .section__head, .edu, .contact__grid { break-inside: avoid; }
   .section__head, h3, h4 { break-after: avoid; }
 
   .about { grid-template-columns: 1.4fr 1fr; gap: 8mm; }
